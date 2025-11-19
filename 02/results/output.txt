@@ -1,0 +1,233 @@
+==========================================
+Проверка результатов
+==========================================
+Список таблиц в базе данных:
+Hive Session ID = 51973a18-161f-4a53-b932-0d8bdf486a11
+
+Logging initialized using configuration in jar:file:/opt/hive/lib/hive-common-3.1.3.jar!/hive-log4j2.properties Async: true
+Hive Session ID = 94fdbe7e-ea1b-4369-afb2-5c79a9a5649b
+OK
+Time taken: 0.448 seconds
+OK
+airports
+flights
+mart_airport_ranking
+mart_carrier_delays
+mart_delay_statistics
+mart_flights_by_day_of_week
+mart_popular_routes
+mart_top_origin_airports
+Time taken: 0.109 seconds, Fetched: 8 row(s)
+
+Количество записей в таблице flights:
+Hive Session ID = 5df6cceb-0b83-46ca-85f5-77202ab2b66b
+
+Logging initialized using configuration in jar:file:/opt/hive/lib/hive-common-3.1.3.jar!/hive-log4j2.properties Async: true
+Hive Session ID = 724b81fe-601c-4eb1-8e3c-26c6a7594aee
+OK
+Time taken: 0.453 seconds
+Query ID = root_20251119095236_94081cc2-784a-426b-934c-33bb634185c8
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1763545631923_0015, Tracking URL = http://any:8088/proxy/application_1763545631923_0015/
+Kill Command = /opt/hadoop/bin/mapred job  -kill job_1763545631923_0015
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2025-11-19 09:52:42,359 Stage-1 map = 0%,  reduce = 0%
+2025-11-19 09:52:46,479 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.42 sec
+2025-11-19 09:52:50,606 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2.39 sec
+MapReduce Total cumulative CPU time: 2 seconds 390 msec
+Ended Job = job_1763545631923_0015
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 2.39 sec   HDFS Read: 72101434 HDFS Write: 107 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 390 msec
+OK
+2702218
+Time taken: 15.175 seconds, Fetched: 1 row(s)
+
+Содержимое витрины mart_flights_by_day_of_week:
+Hive Session ID = 27ea4166-76f5-4a62-bf23-050cc99852b3
+
+Logging initialized using configuration in jar:file:/opt/hive/lib/hive-common-3.1.3.jar!/hive-log4j2.properties Async: true
+Hive Session ID = 0184acf9-dabe-475c-afcd-540e3e0837af
+OK
+Time taken: 0.425 seconds
+OK
+1       407837
+2       397594
+3       403072
+4       406563
+5       396387
+6       318537
+7       372228
+Time taken: 0.835 seconds, Fetched: 7 row(s)
+
+Содержимое витрины mart_top_origin_airports:
+Hive Session ID = b704739c-d3cf-4847-9e32-26435859783a
+
+Logging initialized using configuration in jar:file:/opt/hive/lib/hive-common-3.1.3.jar!/hive-log4j2.properties Async: true
+Hive Session ID = 208ffa8e-8423-4ae8-8d05-908798723777
+OK
+Time taken: 0.423 seconds
+OK
+10397   Hartsfield-Jackson Atlanta International        Atlanta GA      148563
+13930   Chicago O'Hare International    Chicago IL      127195
+12892   Los Angeles International       Los Angeles     CA      117714
+11298   Dallas/Fort Worth International Dallas/Fort Worth       TX      104270
+11292   Denver International    Denver  CO      97259
+14107   Phoenix Sky Harbor International        Phoenix AZ      89720
+14771   San Francisco International     San Francisco   CA      84276
+12889   McCarran International  Las Vegas       NV      77878
+11057   Charlotte Douglas International Charlotte       NC      76465
+12266   George Bush Intercontinental/Houston    Houston TX      73346
+Time taken: 0.848 seconds, Fetched: 10 row(s)
+
+Содержимое витрины mart_carrier_delays:
+Hive Session ID = 6aa22b83-140d-4734-b0a0-a19bf61fcd8b
+
+Logging initialized using configuration in jar:file:/opt/hive/lib/hive-common-3.1.3.jar!/hive-log4j2.properties Async: true
+Hive Session ID = 37f98132-3535-47a7-8aac-d12947505f3a
+OK
+Time taken: 0.427 seconds
+OK
+AS      68555   15372   25865   0.6592371088906718      -0.27210269126978337    654     669
+HA      17432   4163    6320    1.533903166590179       1.5321248279027078      1847    1845
+US      233321  68636   92498   4.974331500379305       3.924031698818366       860     848
+DL      381657  119574  127456  7.439483620109155       2.803331263411912       1165    1166
+OO      160164  50467   63744   7.826939886616218       6.339957793261907       773     774
+YV      52821   16584   21864   9.385755665360367       8.547585240718654       662     650
+9E      80031   23391   26378   9.510189801451938       4.7892066824105655      710     700
+FL      92702   41588   40438   10.16288753209208       7.228765290932235       1113    1102
+AA      289855  126318  116679  12.00779700194925       7.1367752841938215      1863    1835
+F9      35738   16858   19426   12.123454026526387      12.848704460238402      789     776
+UA      286418  133146  105990  12.545388208841622      5.163631475675412       787     779
+B6      121906  46491   51015   12.619797220809476      9.634792381014881       537     510
+WN      575739  341822  278577  12.846166405263496      8.313306897743596       608     614
+EV      157928  59554   62185   14.137537358796413      10.205865964236867      838     812
+VX      34739   14162   13928   14.386251763148048      9.65790609977259        765     746
+MQ      113212  45372   51796   15.050197858884218      13.731132742112143      1244    1237
+Time taken: 0.853 seconds, Fetched: 16 row(s)
+
+Содержимое витрины mart_popular_routes:
+Hive Session ID = 12373d74-18ac-49aa-bd97-d1b9f452db88
+
+Logging initialized using configuration in jar:file:/opt/hive/lib/hive-common-3.1.3.jar!/hive-log4j2.properties Async: true
+Hive Session ID = 373f680a-a7a2-4f02-8fd5-42b17f38ae0c
+OK
+Time taken: 0.473 seconds
+OK
+San Francisco International     San Francisco   CA      Los Angeles International       Los Angeles     CA       9643
+Los Angeles International       Los Angeles     CA      San Francisco International     San Francisco   CA       9583
+Los Angeles International       Los Angeles     CA      McCarran International  Las Vegas       NV      6864
+McCarran International  Las Vegas       NV      Los Angeles International       Los Angeles     CA      6835
+John F. Kennedy International   New York        NY      Los Angeles International       Los Angeles     CA       6643
+Los Angeles International       Los Angeles     CA      John F. Kennedy International   New York        NY       6620
+Kahului Airport Kahului HI      Honolulu International  Honolulu        HI      6374
+Honolulu International  Honolulu        HI      Kahului Airport Kahului HI      6306
+LaGuardia       New York        NY      Hartsfield-Jackson Atlanta International        Atlanta GA      5931
+Hartsfield-Jackson Atlanta International        Atlanta GA      LaGuardia       New York        NY      5900
+Time taken: 0.926 seconds, Fetched: 10 row(s)
+
+Содержимое витрины mart_delay_statistics:
+Hive Session ID = 045eb8fc-273b-472f-98f8-a0f5480e9c49
+
+Logging initialized using configuration in jar:file:/opt/hive/lib/hive-common-3.1.3.jar!/hive-log4j2.properties Async: true
+Hive Session ID = 862c9f9b-c839-444b-8ffb-b8bb6e26ea1b
+OK
+Time taken: 0.436 seconds
+OK
+arrival early   1503982
+arrival large_delay     538006
+arrival on_time 94077
+arrival small_delay     566153
+departure       early   1389985
+departure       large_delay     523220
+departure       on_time 188735
+departure       small_delay     600278
+Time taken: 0.847 seconds, Fetched: 8 row(s)
+
+Содержимое витрины mart_airport_ranking:
+Hive Session ID = 6271e3b4-692c-4ca3-9189-4d797987db38
+
+Logging initialized using configuration in jar:file:/opt/hive/lib/hive-common-3.1.3.jar!/hive-log4j2.properties Async: true
+Hive Session ID = 631b0d6b-6421-455f-8624-5b18011a8473
+OK
+Time taken: 0.437 seconds
+OK
+10397   Hartsfield-Jackson Atlanta International        Atlanta GA      148563  1       1       1
+13930   Chicago O'Hare International    Chicago IL      127195  2       2       2
+12892   Los Angeles International       Los Angeles     CA      117714  3       3       3
+11298   Dallas/Fort Worth International Dallas/Fort Worth       TX      104270  4       4       4
+11292   Denver International    Denver  CO      97259   5       5       5
+14107   Phoenix Sky Harbor International        Phoenix AZ      89720   6       6       6
+14771   San Francisco International     San Francisco   CA      84276   7       7       7
+12889   McCarran International  Las Vegas       NV      77878   8       8       8
+11057   Charlotte Douglas International Charlotte       NC      76465   9       9       9
+12266   George Bush Intercontinental/Houston    Houston TX      73346   10      10      10
+10721   Logan International     Boston  MA      66699   11      11      11
+11618   Newark Liberty International    Newark  NJ      64313   12      12      12
+11433   Detroit Metro Wayne County      Detroit MI      62584   13      13      13
+12478   John F. Kennedy International   New York        NY      60351   14      14      14
+13487   Minneapolis-St Paul International       Minneapolis     MN      60174   15      15      15
+14747   Seattle/Tacoma International    Seattle WA      60172   16      16      16
+13204   Orlando International   Orlando FL      58983   17      17      17
+12953   LaGuardia       New York        NY      57675   18      18      18
+10821   Baltimore/Washington International Thurgood Marshall    Baltimore       MD      51761   19      19       19
+13232   Chicago Midway International    Chicago IL      49744   20      20      20
+14100   Philadelphia International      Philadelphia    PA      47446   21      21      21
+14869   Salt Lake City International    Salt Lake City  UT      47324   22      22      22
+14679   San Diego International San Diego       CA      45351   23      23      23
+11278   Ronald Reagan Washington National       Washington      DC      43107   24      24      24
+13303   Miami International     Miami   FL      41948   25      25      25
+12264   Washington Dulles International Washington      DC      37429   26      26      26
+15304   Tampa International     Tampa   FL      35149   27      27      27
+11697   Fort Lauderdale-Hollywood International Fort Lauderdale FL      34858   28      28      28
+10693   Nashville International Nashville       TN      34757   29      29      29
+15016   Lambert-St. Louis International St. Louis       MO      33061   30      30      30
+13198   Kansas City International       Kansas City     MO      30509   31      31      31
+14057   Portland International  Portland        OR      30484   32      32      32
+12191   William P Hobby Houston TX      28963   33      33      33
+14492   Raleigh-Durham International    Raleigh/Durham  NC      28301   34      34      34
+10423   Austin - Bergstrom International        Austin  TX      26982   35      35      35
+11042   Cleveland-Hopkins International Cleveland       OH      25191   36      36      36
+13495   Louis Armstrong New Orleans International       New Orleans     LA      25184   37      37      37
+13796   Metropolitan Oakland International      Oakland CA      25178   38      38      38
+14893   Sacramento International        Sacramento      CA      24930   39      39      39
+14831   Norman Y. Mineta San Jose International San Jose        CA      24310   40      40      40
+11193   Cincinnati/Northern Kentucky International      Cincinnati      OH      23975   41      41      41
+14908   John Wayne Airport-Orange County        Santa Ana       CA      23581   42      42      42
+14683   San Antonio International       San Antonio     TX      22880   43      43      43
+13342   General Mitchell International  Milwaukee       WI      21002   44      44      44
+14122   Pittsburgh International        Pittsburgh      PA      20511   45      45      45
+11259   Dallas Love Field       Dallas  TX      19062   46      46      46
+13244   Memphis International   Memphis TN      18657   47      47      47
+12339   Indianapolis International      Indianapolis    IN      18038   48      48      48
+10140   Albuquerque International Sunport       Albuquerque     NM      17542   49      49      49
+11066   Port Columbus International     Columbus        OH      17223   50      50      50
+12173   Honolulu International  Honolulu        HI      17049   51      51      51
+10792   Buffalo Niagara International   Buffalo NY      14797   52      52      52
+12451   Jacksonville International      Jacksonville    FL      14654   53      53      53
+10800   Bob Hope        Burbank CA      14170   54      54      54
+13851   Will Rogers World       Oklahoma City   OK      13922   55      55      55
+14843   Luis Munoz Marin International  San Juan        PR      13840   56      56      56
+13871   Eppley Airfield Omaha   NE      13487   57      57      57
+10529   Bradley International   Hartford        CT      13042   58      58      58
+14635   Southwest Florida International Fort Myers      FL      12456   59      59      59
+13891   Ontario International   Ontario CA      12370   60      60      60
+14524   Richmond International  Richmond        VA      11485   61      61      61
+13830   Kahului Airport Kahului HI      11346   62      62      62
+15376   Tucson International    Tucson  AZ      10990   63      63      63
+14730   Louisville International-Standiford Field       Louisville      KY      10915   64      64      64
+14570   Reno/Tahoe International        Reno    NV      10344   65      65      65
+14027   Palm Beach International        West Palm Beach/Palm Beach      FL      10091   66      66      66
+13931   Norfolk International   Norfolk VA      10006   67      67      67
+14307   Theodore Francis Green State    Providence      RI      9313    68      68      68
+12954   Long Beach Airport      Long Beach      CA      8166    69      69      69
+10299   Ted Stevens Anchorage International     Anchorage       AK      7700    70      70      70
+Time taken: 0.888 seconds, Fetched: 70 row(s)
